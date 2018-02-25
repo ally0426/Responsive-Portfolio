@@ -45,14 +45,14 @@ h2, h3 {
 
 /* header */
 #masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
   background: #fff;
   margin: 0 0 30px;
-  z-index: 99;
   color: #fff;
   overflow: auto;
   border-bottom: 2px solid #ccc;
-  position: fixed;
-  width: 100%;
 }
 
 #logo {
@@ -96,7 +96,7 @@ nav a:first-child {
 .main-section {
   background: #fff;
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   width: 100%;
   max-width: 650px;
   float: left;
@@ -121,7 +121,7 @@ nav a:first-child {
   margin-bottom: 20px;
 }
 
-h3, .sidebar, h2 {
+h3, .sidebar h2 {
   border-bottom: 2px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 15px;
@@ -159,6 +159,12 @@ footer {
   float: left;
   margin: 20px 0 25px;
 }
+
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
 
 .work img {
   width: 100%;
